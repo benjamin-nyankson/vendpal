@@ -1,54 +1,98 @@
-# React + TypeScript + Vite
+# VendPal Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+VendPal is a modular and reusable dashboard application built with modern web technologies, following best practices in component design, state management, API integration, styling, routing, accessibility, and performance optimization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React with Vite** – Fast and efficient development experience.
+- **TypeScript** – Ensures type safety and maintainability.
+- **Zustand** – Lightweight and scalable state management.
+- **JSON Server** – Simulated API for handling mock data.
+- **Tailwind CSS** – Responsive and utility-first styling.
+- **React Router** – Client-side routing for seamless navigation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 🔹 Component Design & Reusability
+- The dashboard is structured with reusable components such as buttons, cards, and navigation elements.
+- Modular architecture enhances maintainability and scalability.
+
+### 🔹 State Management
+- Utilizes **Zustand** to manage global state efficiently.
+- Ensures accurate and reactive data updates across components.
+
+### 🔹 Simulated API Integration
+- **JSON Server** provides a mock API to simulate real-world scenarios.
+- Handles asynchronous data fetching, including loading and error states.
+
+### 🔹 Styling & Responsiveness
+- **Tailwind CSS** enables a minimalist yet highly customizable design.
+- Ensures seamless adaptability across different screen sizes.
+
+### 🔹 Routing & Navigation
+- **React Router** enables smooth navigation between dashboard sections.
+- Implements protected routes and dynamic route management.
+
+### 🔹 Accessibility & Performance
+- Follows best practices to enhance usability for all users.
+- Implements **lazy loading** for improved performance and reduced initial load time.
+
+### 🔹 Code Quality & Documentation
+- Clean, modular, and well-documented code structure.
+- Includes meaningful comments to explain design decisions.
+
+## Installation & Setup
+
+### Prerequisites
+Ensure you have the following installed on your system:
+- Node.js (>= 16)
+- npm 
+
+### Steps to Run Locally
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/benjamin-nyankson/vendpal.git
+   cd vendpal
+   ```
+2. Install dependencies:
+   ```sh
+   npm install 
+   ```
+3. Start JSON Server for the simulated API:
+   ```sh
+   npx json-server src/data.json
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev  
+   ```
+5. Open the application in your browser at `http://localhost:5173/`
+
+## Project Structure
+
+```
+├── src
+│   ├── components     # Reusable UI components (Buttons, cards, navigation, etc.)
+│   ├── pages          # Dashboard views and sections
+│   ├── store          # Zustand store for state management
+│   ├── api            # API handlers and simulated data
+│   ├── routes         # React Router configurations
+│   ├── styles         # Tailwind and global styles
+│   └── appRoutes.tsx  # Main application entry point
+├── public             # Static assets
+├── db.json            # JSON Server mock data
+├── README.md          # Project documentation
+└── package.json       # Dependencies and scripts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Additional Notes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Lazy Loading**: Dynamically imports components to boost performance.
+- **Error Handling**: Implements error boundaries and API response validation.
+- **Enhancements**: Future improvements may include real API integration and additional widgets.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+For any questions, feel free to reach out! 🚀
+
