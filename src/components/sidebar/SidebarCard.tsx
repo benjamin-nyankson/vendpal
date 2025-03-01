@@ -15,7 +15,7 @@ type CardProps = {
 export default function SidebarCard(props: CardProps) {
   const { item } = props;
   return (
-    <div className="border border-[#C0C9C0] flex items-center justify-center p-6 rounded-3xl w-fit min-w-[344.5px] flex-col gap-4">
+    <div className="border border-[#C0C9C0] flex items-center justify-center p-6 rounded-3xl w-full flex-col gap-4">
       <div className="w-full">{item.content}</div>
       <Button onClick={item.button.onClick} label={item.button.label} icon={item.button.icon} className={item.button.className} />
     </div>
