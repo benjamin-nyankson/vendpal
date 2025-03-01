@@ -1,0 +1,166 @@
+{
+  "departments": [
+    {
+      "id": "1",
+      "bgColor": {
+        "container": "#E6F2FF",
+        "main": "#7DC9FF"
+      },
+      "body": "But now you can use Material's dynamic color feature to automatically generate accessible colors assigned to each 'number.'",
+      "title": "Design Team"
+    },
+    {
+      "id": "3",
+      "bgColor": {
+        "container": "#E6FFE6",
+        "main": "#7DFF7D"
+      },
+      "body": "The engineering team ensures everything runs smoothly.",
+      "title": "Engineering Team"
+    },
+    {
+      "id": "4",
+      "bgColor": {
+        "container": "#FFF6E6",
+        "main": "#FFBF7D"
+      },
+      "body": "The HR department focuses on employee well-being.",
+      "title": "HR Team"
+    },
+    {
+      "id": "5abb",
+      "bgColor": {
+        "container": "#0becbf",
+        "main": "#7a7944"
+      },
+      "body": "Aliquip beatae fuga",
+      "title": "Graham Smith"
+    },
+    {
+      "id": "9af7",
+      "bgColor": {
+        "container": "#dd52c2",
+        "main": "#9d772f"
+      },
+      "body": "Occaecat saepe ad eu",
+      "title": "Cullen James"
+    },
+    {
+      "id": "b29a",
+      "bgColor": {
+        "container": "#f7c24c",
+        "main": "#6b812f"
+      },
+      "body": "Aut incidunt omnis ",
+      "title": "Hamilton Hodge"
+    },
+    {
+      "id": "9461",
+      "bgColor": {
+        "container": "#2202d3",
+        "main": "#6c4745"
+      },
+      "body": "Laboris possimus po",
+      "title": "Kevin Holden"
+    },
+    {
+      "id": "620e",
+      "bgColor": {
+        "container": "#2202d3",
+        "main": "#6c4745"
+      },
+      "body": "Laboris possimus po",
+      "title": "Kevin Holden"
+    },
+    {
+      "id": "3474",
+      "bgColor": {
+        "container": "#07a968",
+        "main": "#421eba"
+      },
+      "body": "Illo sapiente fugiat",
+      "title": "Hyacinth Harrell"
+    },
+    {
+      "id": "a7b3",
+      "bgColor": {
+        "container": "#86ab4f",
+        "main": "#fa12b6"
+      },
+      "body": "Ullamco animi quo v",
+      "title": "Ahmed Mcdaniel"
+    },
+    {
+      "id": "5011",
+      "bgColor": {
+        "container": "#7a3bca",
+        "main": "#ff48c4"
+      },
+      "body": "Dolor in commodo qua",
+      "title": "Kaye Haley"
+    },
+    {
+      "id": "1db1",
+      "bgColor": {
+        "container": "#c32378",
+        "main": "#945f04"
+      },
+      "body": "Impedit delectus d",
+      "title": "Malcolm Wheeler"
+    },
+    {
+      "id": "94ac",
+      "bgColor": {
+        "container": "#2e6641",
+        "main": "#fa19e2"
+      },
+      "body": "Qui odit Nam ad offi",
+      "title": "Chava Branch"
+    },
+    {
+      "id": "739c",
+      "bgColor": {
+        "container": "#f42a0a",
+        "main": "#e4ff73"
+      },
+      "body": "Ipsa esse dolore al",
+      "title": "Aspen Keith"
+    },
+    {
+      "id": "2fee",
+      "bgColor": {
+        "container": "#dcbfde",
+        "main": "#cbbff8"
+      },
+      "body": "Iure laboriosam exe",
+      "title": "Liberty Medina"
+    },
+    {
+      "id": "571a",
+      "bgColor": {
+        "container": "#1666e6",
+        "main": "#81f01b"
+      },
+      "body": "Sit sapiente qui et ",
+      "title": "Madeline Oneil"
+    },
+    {
+      "id": "bd24",
+      "bgColor": {
+        "container": "#49e9ef",
+        "main": "#389457"
+      },
+      "body": "Aperiam pariatur Si",
+      "title": "Sebastian Herman"
+    },
+    {
+      "id": "f4f0",
+      "bgColor": {
+        "container": "#6cad54",
+        "main": "#c0d0c3"
+      },
+      "body": "Labore expedita mole",
+      "title": "Jennifer Meyer"
+    }
+  ]
+}

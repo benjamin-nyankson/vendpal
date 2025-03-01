@@ -14,7 +14,7 @@ export default function Settings() {
         <SectionText
           label="venturaBrody@co.ng"
           icon={<MessageIcon />}
-        className="font-normal"/>
+        className="font-normal "/>
         <SectionText
           label="Lagos, Nigeria"
           icon={<WorldIcon />}
