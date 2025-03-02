@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import RenderedRoutes from "../routes/RenderedRoutes";
 import Sidebar from "../components/sidebar/Sidebar";
 import Navbar from "../components/navbar/Navbar";
@@ -8,15 +8,24 @@ import { useStore } from "../store/useStore";
 
 // Main Layout
 const Layout = ({ children }: { children?: ReactNode }) => {
-  const { isSidebarOpen,open } = useStore();
+  const { isSidebarOpen, open, setSideBar } = useStore();
   const { screenWidth } = useWindowSize();
+
+  useEffect(() => {
+    if (screenWidth >= 768) {
+      setSideBar(true);
+    }
+    else if(screenWidth <768){
+      setSideBar(false)
+    }
+  }, [screenWidth, setSideBar]);
   return (
     <div className=" h-screen">
       <Navbar />
       {open && <Alert />}
-      
+
       <div className="flex  ">
-        {(isSidebarOpen || screenWidth >= 820) && (
+        {isSidebarOpen && (
           <div>
             <Sidebar />
           </div>

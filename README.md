@@ -63,7 +63,7 @@ Ensure you have the following installed on your system:
    ```
 3. Start JSON Server for the simulated API:
    ```sh
-   npx json-server src/data.json
+   npx json-server src/data/db.json
    ```
 4. Start the development server:
    ```sh
