@@ -3,6 +3,7 @@ import CurrencyAndTaxes from "../components/budget/CurrencyAndTaxes";
 import Analytics from "../pages/Analytics";
 import BudegetRoom from "../pages/BudegetRoom";
 import Dashboard from "../pages/Dashboard";
+import NotFound from "../components/NotFound"
 export const routes = [
   {
     path: "/",
@@ -39,4 +40,8 @@ export const routes = [
       },
     ],
   },
+  {
+    path:"*",
+    element:<NotFound/>
+  }
 ];
