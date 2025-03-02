@@ -8,7 +8,7 @@ export default function Settings() {
     <div className="flex flex-col gap-4">
       <div className="flex justify-between items-center gap-6">
         <img src={profile} alt="profile" className="size-14" />
-        <p className="text-[#232628] font-medium text-lg sm:text-sm md:text-lg lg:text-xl">Ventura Brody</p>
+        <p className="text-neutral15 font-medium text-lg sm:text-sm md:text-lg lg:text-xl">Ventura Brody</p>
         </div>
 
         <SectionText

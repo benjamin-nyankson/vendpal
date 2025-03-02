@@ -7,7 +7,7 @@ type Props = {
 export default function SectionText(props: Props) {
   return (
     <div
-      className={`flex items-center justify-between text-lg  text-[#252624]`}
+      className={`flex items-center justify-between text-lg  text-neutral15`}
     >
       <div className="flex items-center gap-3">
         {props.icon}

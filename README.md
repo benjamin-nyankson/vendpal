@@ -81,7 +81,7 @@ Ensure you have the following installed on your system:
 │   ├── api            # API handlers and simulated data
 │   ├── routes         # React Router configurations
 │   ├── styles         # Tailwind and global styles
-│   └── appRoutes.tsx  # Main application entry point
+│   └── RenderedRoutes.tsx  # Main application entry point
 ├── public             # Static assets
 ├── db.json            # JSON Server mock data
 ├── README.md          # Project documentation

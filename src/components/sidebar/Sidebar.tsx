@@ -6,8 +6,13 @@ import Upgrade from "./sections/Upgrade";
 import ArrowUp from "../../assets/icons/ArrowUp";
 import WorldLinkIcon from "../../assets/icons/WorldLinkIcon";
 import HeaderText from "../HeaderText";
+import { useStore } from "../../store/useStore";
 
 export default function Sidebar() {
+  const {setAlert}  = useStore()
+  const handleAlert = ()=>{
+setAlert(["Ckicked successfully","success"])
+  }
   const sidebarcardSections = [
     {
       content: <Settings />,
@@ -35,12 +40,12 @@ export default function Sidebar() {
         label: "LinkedIn",
         icon: <WorldLinkIcon />,
         className: "",
-        onClick:()=>alert("hello")
+        onClick: handleAlert,
       },
     },
   ];
   return (
-    <aside className="min-w-64 border-r border-[#C0C9C0]  h-screen flex flex-col ">
+    <aside className="min-w-64 border-right  h-screen flex flex-col ">
       <div className="p-5">
         <div className="flex flex-col gap-6">
           {sidebarcardSections.map((section) => (

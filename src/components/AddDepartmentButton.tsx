@@ -15,7 +15,7 @@ const AddButton = memo(({ onClick }: AddButtonProps) => {
         className="bg-white cursor-pointer w-fit p-2 flex items-center justify-center rounded-full"
         onClick={onClick}
       >
-        <div className="flex items-center justify-center bg-[#00361D] size-20 rounded-full">
+        <div className="flex items-center justify-center bg-primary size-20 rounded-full">
           <PlusIcon />
         </div>
       </div>

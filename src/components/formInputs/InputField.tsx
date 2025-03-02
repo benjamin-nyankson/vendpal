@@ -69,7 +69,7 @@ const InputField = forwardRef<HTMLDivElement, InputDivProps>(
         )}
         {type === "textarea" ? (
           <textarea
-            className="input border p-4 border-[#C0C9C0] focus:outline-0 rounded-xl !h-[150px]"
+            className="input  p-4 border-full focus:outline-0 rounded-xl !h-[150px]"
             id={id}
             name={id}
             value={value}
@@ -79,7 +79,7 @@ const InputField = forwardRef<HTMLDivElement, InputDivProps>(
           />
         ) : (
           <input
-            className="input border p-4 border-[#C0C9C0] focus:outline-0 rounded-xl "
+            className="input p-4 border-full focus:outline-0 rounded-xl "
             id={id}
             name={id}
             type={type}
@@ -103,6 +103,5 @@ const InputField = forwardRef<HTMLDivElement, InputDivProps>(
     );
   }
 );
-
 
 export default React.memo(InputField);
