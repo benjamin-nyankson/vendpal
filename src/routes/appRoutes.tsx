@@ -4,6 +4,7 @@ import Analytics from "../pages/Analytics";
 import BudegetRoom from "../pages/BudegetRoom";
 import Dashboard from "../pages/Dashboard";
 import NotFound from "../components/NotFound"
+import EmptyPage from "../components/EmptyPage";
 export const routes = [
   {
     path: "/",
@@ -12,6 +13,11 @@ export const routes = [
   {
     path:"/analytics",
     element:<Analytics/>
+
+  },
+  {
+    path:"/workflow",
+    element:<EmptyPage/>
 
   },
   {
@@ -28,15 +34,15 @@ export const routes = [
       },
       {
         path: "budget-line",
-        element: <div className="w-full">helooo</div>,
+        element: <EmptyPage/>,
       },
       {
         path: "brc",
-        element: <div className="w-full">helooo</div>,
+        element: <EmptyPage/>,
       },
       {
         path: "budget-control",
-        element: <div className="w-full">helooo</div>,
+        element: <EmptyPage/>,
       },
     ],
   },

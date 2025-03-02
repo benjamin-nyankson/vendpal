@@ -5,20 +5,36 @@ import Navbar from "../components/navbar/Navbar";
 import useWindowSize from "../hooks/useWindownSize";
 import Alert from "../components/ui/AlertComponent";
 import { useStore } from "../store/useStore";
+import { useLocation } from "react-router-dom";
 
 // Main Layout
 const Layout = ({ children }: { children?: ReactNode }) => {
   const { isSidebarOpen, open, setSideBar } = useStore();
   const { screenWidth } = useWindowSize();
+  const location = useLocation();
 
   useEffect(() => {
     if (screenWidth >= 768) {
       setSideBar(true);
-    }
-    else if(screenWidth <768){
-      setSideBar(false)
+    } else if (screenWidth < 768) {
+      setSideBar(false);
     }
   }, [screenWidth, setSideBar]);
+
+  useEffect(() => {
+    const titles: { [key: string]: string } = {
+      "/": "Dashboard - Venpal",
+      "/analytics": "Analytics - Venpal",
+      "/budget": "Budget Room - Venpal",
+      "/budget/currency": "Currency & Taxes - Venpal",
+      "/budget/budget-line": "Budget Line - Venpal",
+      "/budget/brc": "BRC - Venpal",
+      "/budget/budget-control": "Budget Control - Venpal",
+      "*": "Page Not Found - Venpal",
+    };
+
+    document.title = titles[location.pathname] || "Venpal";
+  }, [location]);
   return (
     <div className=" h-screen">
       <Navbar />
