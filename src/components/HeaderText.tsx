@@ -1,6 +1,9 @@
+import React from "react"
 
-export default function HeaderText({text}:{text:string}) {
+ function HeaderText({text}:{text:string}) {
   return (
     <p className="font-medium text-lg">{text}</p>
   )
 }
+
+export default React.memo(HeaderText)

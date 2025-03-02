@@ -1,5 +1,6 @@
+import { memo } from "react";
 
-export default function CloseIcon({onClick}:{onClick:()=>void}) {
+const CloseIcon = memo(({ onClick }: { onClick: () => void }) => {
   return (
     <div className="cursor-pointer" onClick={onClick}>
       <svg
@@ -13,9 +14,11 @@ export default function CloseIcon({onClick}:{onClick:()=>void}) {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M6 18 18 6M6 6l12 12"
+          d="M6 18L18 6M6 6l12 12"
         />
       </svg>
     </div>
   );
-}
+});
+
+export default CloseIcon;

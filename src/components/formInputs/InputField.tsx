@@ -105,4 +105,4 @@ const InputField = forwardRef<HTMLDivElement, InputDivProps>(
 );
 
 
-export default InputField;
+export default React.memo(InputField);
