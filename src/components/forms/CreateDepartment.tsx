@@ -131,7 +131,7 @@ export default function CreateDepartment({ onClick }: { onClick: () => void }) {
         <Button
           type="submit"
           label={loading ? "Submitting..." : "Submit"}
-          className="bg-[#00361D] text-white text-xl flex items-center justify-center"
+          className="bg-primary text-white text-xl flex items-center justify-center"
           disabled={isButtonDisabled}
         />
       </form>

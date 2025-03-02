@@ -1,5 +1,74 @@
 @import "tailwindcss";
 
+:root {
+  --color-neutral15: #252624;
+  --color-primary: #00361D;
+  --color-primary-container:#C5FCD6;
+  --border-color: #C0C9C0;
+  --color-surface-container:#EDEEEA;
+  --color-error90:#FFDAD6;
+  --color-error:#BA1A1A;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
   }
+  color: var(--color-neutral15);
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 1px;
+}
+.scrollbar-2::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Border Utilities */
+.border-bottom {
+  border-bottom: 1px solid var(--border-color);
+}
+.border-full {
+  border: 1px solid var(--border-color);
+}
+.border-right {
+  border-right: 1px solid var(--border-color);
+}
+.border-top {
+  border-top: 1px solid var(--border-color);
+}
+
+@layer utilities {
+  /* Text Colors */
+  .text-neutral15 {
+    color: var(--color-neutral15);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-primary-container{
+    color: var(--color-primary-container);
+  }
+  .text-error{
+    color:var(--color-error)
+  }
+
+  /* Background Colors */
+  .bg-neutral15 {
+    background-color: var(--color-neutral15);
+  }
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-primary-container{
+    background-color: var(--color-primary-container);
+  }
+  .bg-surface-container{
+    background-color: var(--color-surface-container);
+  }
+  .bg-error90{
+    background-color: var(--color-error90);
+  }
+}

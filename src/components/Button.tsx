@@ -23,7 +23,7 @@ const Button = memo(
     return (
       <button
         type={type}
-        className={`p-5 w-full cursor-pointer border border-[#C0C9C0] text-[#252624] rounded-xl transition flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none ${className}`}
+        className={`p-5 w-full cursor-pointer border-full text-neutral15 rounded-xl transition flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none ${className}`}
         onClick={onClick}
         disabled={disabled}
         aria-label={ariaLabel || label}

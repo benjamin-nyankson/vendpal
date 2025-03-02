@@ -30,7 +30,7 @@ const Layout = ({ children }: { children?: ReactNode }) => {
             <Sidebar />
           </div>
         )}
-        <main className="p-5 overflow-auto h-screen">
+        <main className="p-5 overflow-auto h-screen w-full">
           {children || <RenderedRoutes />}
         </main>
       </div>
